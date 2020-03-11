@@ -15,8 +15,8 @@ function getParks(key, max=10, code) {
     'VT','VA','WA','WV','WI','WY'];
 
     const maxResults = $('#js-max-results').val();
+    const abbreviation = document.getElementById("code").value;
 
-    const abbreviation = $(".form-control option:selected").val();
     console.log(abbreviation);
     const params = {
       api_key: apiKey,
@@ -62,6 +62,7 @@ function displayResults(responseJson) {
         <p>${responseJson.data[i].description}</p>
         <a href="${responseJson.data[i].url}">Link</a>
         </li>`
+
       )};
 
 //display the results section  
