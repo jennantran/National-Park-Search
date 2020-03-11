@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>National Parks Search</h1>
+        <form>
+            <select class="form-control">
+                <option value="AL" name="states"><label>Alabama</label>
+                <option value="AK" name="states"><label>Alaska</label>
+                <option value="AZ" name="states"><label>Arizona</label>
+                <option value="AR" name="states"><label>Arkansas</label>
+                <option value="CA" name="states"><label>California</label>
+                <option value="CO" name="states"><label>Colorado</label>
+                <option value="CT" name="states"><label>Connecticut</label>
+                <option value="DE" name="states"><label>Delaware</label>
+                <option value="FL" name="states"><label>Florida</label>
+                <option value="GA" name="states"><label>Georgia</label>
+                <option value="HI" name="states"><label>Hawaii</label>
+                <option value="ID" name="states"> <label>Idaho</label>
+                <option value="IL" name="states"> <label>Illinois</label>
+                <option value="IN" name="states"><label>Indiana</label>
+                <option value="IA" name="states"><label>Iowa</label>
+                <option value="KS" name="states"><label>Kansas</label>
+                <option value="KY" name="states"><label>Kentucky</label>
+                <option value="LA" name="states"><label>Louisiana</label>
+                <option value="ME" name="states"><label>Maine</label>
+                <option value="MD" name="states"><label>Maryland</label>
+                <option value="MA" name="states"><label>Massachusetts</label>
+                <option value="MI" name="states"><label>Michigan</label>
+                <option value="MN" name="states"><label>Minnesota</label>
+                <option value="MS"name="states" ><label>Mississippi</label>
+                <option value="MO" name="states"><label>Missouri</label>
+                <option value="MT" name="states"><label>Montana</label>
+                <option value="NE" name="states"><label>Nebraska</label>
+                <option value="NV" name="states"><label>Nevada</label>
+                <option value="NH" name="states"><label>New Hampshire</label>
+                <option value="NJ" name="states"><label>New Jersey</label>
+                <option value="NM" name="states"><label>New Mexico</label>
+                <option value="NY" name="states"><label>New York</label>
+                <option value="NC" name="states"><label>North Carolina</label>
+                <option value="ND" name="states"><label>North Dakota</label>
+                <option value="OH" name="states"><label>Ohio</label>
+                <option value="OK" name="states"><label>Oklahoma</label>
+                <option value="OR" name="states"><label>Oregon</label>
+                <option value="PA" name="states"><label>Pennsylvania</label>
+                <option value="RI" name="states"><label>Rhode Island</label>
+                <option value="SC" name="states"><label>South Carolina</label>
+                <option value="SD" name="states"><label>South Dakota</label>
+                <option value="TN" name="states"><label>Tennessee</label>
+                <option value="TX" name="states"><label>Texas</label>
+                <option value="UT" name="states"><label>Utah</label>
+                <option value="VT" name="states"><label>Vermont</label>
+                <option value="VA" name="states"><label>Virginia</label>
+                <option value="WA" name="states"><label>Washington</label>
+                <option value="WV" name="states"><label>West Virginia</label>
+                <option value="WI" name="states"><label>Wisconsin</label>
+                <option value="WY" name="states"><label>Wyoming</label>
+            </group>
+            <label for="max-results">Maximum results to return</label>
+            <input type="number" name="max-results" id="js-max-results" value="10" min="1" max="10">
+
+            <input type="submit" value="submit">
+
+            <p id="error-message"></p>
+            <section id="results" class="hidden">
+                <h2>Results</h2>
+                <ol class="results-list">
+                </ol>
+            </section>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

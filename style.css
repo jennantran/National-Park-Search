@@ -1,0 +1,14 @@
+
+* {
+    box-sizing: border-box;
+  }
+  .hidden {
+    display: none;
+  }  
+
+
+  input[type="radio"]{
+    vertical-align: middle;
+    display: inline-block;
+
+  }
