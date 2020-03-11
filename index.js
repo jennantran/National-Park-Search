@@ -7,7 +7,7 @@ function formatQueryParams(params) {
     return queryItems.join('&');
   }
 
-function getParks(key, max=10, code) {
+function getParks(key, max=10) {
 
     let stateCode = ['AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID',
     'IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV',
@@ -15,8 +15,8 @@ function getParks(key, max=10, code) {
     'VT','VA','WA','WV','WI','WY'];
 
     const maxResults = $('#js-max-results').val();
-    const abbreviation = $('#code').value;
-
+    const abbreviation = $('#code').val();
+  
     console.log(abbreviation);
     const params = {
       api_key: apiKey,
