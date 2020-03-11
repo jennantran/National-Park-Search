@@ -10,8 +10,9 @@
 <body>
     <div class="container">
         <h1>National Parks Search</h1>
+        <p>Select one or more states to view its parks.</p>
         <form>
-            <select class="form-control">
+            <select class="form-control" multiple>
                 <option value="AL" name="states"><label>Alabama</label>
                 <option value="AK" name="states"><label>Alaska</label>
                 <option value="AZ" name="states"><label>Arizona</label>
@@ -62,12 +63,13 @@
                 <option value="WV" name="states"><label>West Virginia</label>
                 <option value="WI" name="states"><label>Wisconsin</label>
                 <option value="WY" name="states"><label>Wyoming</label>
-            </group>
-            <label for="max-results">Maximum results to return</label>
-            <input type="number" name="max-results" id="js-max-results" value="10" min="1" max="10">
-
-            <input type="submit" value="submit">
-
+                </select>
+              
+          
+                <label for="max-results">Maximum results to return</label>
+                <input type="number" name="max-results" id="js-max-results" value="10" min="1" max="10">
+                <input type="submit" value="submit">
+            </form>
             <p id="error-message"></p>
             <section id="results" class="hidden">
                 <h2>Results</h2>
