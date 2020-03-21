@@ -15,7 +15,7 @@ function getParks(key, max=10) {
     'VT','VA','WA','WV','WI','WY'];
 
     const maxResults = $('#js-max-results').val();
-    const abbreviation = $('#code').val().split(/W+/);
+    const abbreviation = $('#code').val().split((/[\s,]+/));
   
     console.log(abbreviation);
     const params = {
